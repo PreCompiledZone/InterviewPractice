@@ -21,7 +21,7 @@ public class CheckLinkedListForPalindrom {
 		while (tempNode != null) {
 			stack.push(tempNode.data);
 			tempNode = tempNode.next;
-		}
+		} 
 		while (head != null) {
 			if (head.data != stack.pop())
 				return false;
