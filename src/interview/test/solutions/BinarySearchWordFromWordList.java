@@ -3,6 +3,7 @@ package interview.test.solutions;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,6 +26,7 @@ public class BinarySearchWordFromWordList {
 
 	// binary search for given word in String[]
 	static int binarySearch(String[] wordsArray, String word) {
+		Arrays.sort(wordsArray);
 		int l = 0, r = wordsArray.length - 1;
 		while (l <= r) {
 			int m = l + (r - l) / 2;
